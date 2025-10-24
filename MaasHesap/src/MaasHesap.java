@@ -40,11 +40,6 @@ public class MaasHesap {
         System.out.print("Haftalik Mesai Saati: ");
         int mesaiSaati = scanner.nextInt();
 
-        // Not: Scanner.close() cagrisi System.in'i de kapatir.
-        // Bu yüzden program boyunca sadece en sonda bir kez kullanilmalidir.
-        // Birden fazla close() cagrisi hata verir!
-        scanner.close();
-
         // ------- HESAPLAMALAR YAPILIR -------
         // Gelirler
         double mesaiUcreti = (brutMaas / 160) * calismaSaati * 1.5;
@@ -99,5 +94,10 @@ public class MaasHesap {
         System.out.printf("   Gunluk Net Kazanc %-8s: %.2f   TL\n", " ", gunlukNetKazanc);
 
         System.out.println("\n" + "=".repeat(45));
+
+        // Not: Scanner.close() cagrisi System.in'i de kapatir.
+        // Bu yüzden program boyunca sadece en sonda bir kez kullanilmalidir.
+        // Birden fazla close() cagrisi hata verir!
+        scanner.close();
     }
 }

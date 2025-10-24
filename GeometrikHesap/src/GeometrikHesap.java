@@ -27,9 +27,6 @@
         System.out.print("Yaricapi giriniz: ");
         int r = scanner.nextInt();
 
-        // Not: Scanner.close() cagrisi System.in'i de kapatir.
-        scanner.close();
-
         // Hesaplamalar
         final double PI = 3.14159;
         double daireAlani = PI * Math.pow(r, 2);
@@ -46,5 +43,8 @@
         System.out.printf("Daire Capi %-9s: %.2f  cm\n", " ", daireCapi);
         System.out.printf("Kure Hacmi %-9s: %.2f cm^3\n", " ", kureHacmi);
         System.out.printf("Kure Yuzey Alani %-3s: %.2f cm^2\n", " ", kureYuzeyAlani);
+
+        // Not: Scanner.close() cagrisi System.in'i de kapatir.
+        scanner.close();
     }
 }

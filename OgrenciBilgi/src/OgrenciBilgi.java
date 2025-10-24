@@ -32,11 +32,6 @@
          System.out.print("GPA (0.00-4.00): ");
          double gpa = scanner.nextDouble();
 
-         // Not: Scanner.close() cagrisi System.in'i de kapatir.
-         // Bu yüzden program boyunca sadece en sonda bir kez kullanilmalidir.
-         // Birden fazla close() cagrisi hata verir!
-         scanner.close();
-
          // Ogrencinin basarili olup olmadigi kontrol edilir
          // Basarili olma durumu gpa 2'den buyuk ve esitse olur
          String basariDurumu;
@@ -53,5 +48,10 @@
          System.out.printf("Yas: %d\n", yas);
          System.out.printf("GPA: %.2f\n", gpa);
          System.out.printf("Durum: %s\n", basariDurumu);
+
+         // Not: Scanner.close() cagrisi System.in'i de kapatir.
+         // Bu yüzden program boyunca sadece en sonda bir kez kullanilmalidir.
+         // Birden fazla close() cagrisi hata verir!
+         scanner.close();
      }
  }
