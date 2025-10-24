@@ -2,7 +2,10 @@
  * Ad Soyad: Muhammet Sefa KOZAN
  * Ogrenci No: 250541057
  * Tarih: 24/10/2025
- * Aciklama: Maas Hesap
+ * Aciklama: Maas Hesaplama
+ *
+ * Calisanin kisisel bilgileri, brut maasi, mesai saatleri gibi verileri alir ve
+ * gelirler, kesintiler, net maas ile birlikte istatistiksel analizler yaparak formatli bir bordro ciktisi uretir.
  */
 
 /*

@@ -2,7 +2,11 @@
   * Ad Soyad: Muhammet Sefa KOZAN
   * Ogrenci No: 250541057
   * Tarih: 24/10/2025
-  * Aciklama: Ogrenci Bilgi
+  * Aciklama: Ogrenci Bilgi Sistemi
+  *
+  * Kullanicidan ogrencinin adı, soyadı,
+  * ogrenci numarası, yasi ve GPA (not ortalamasi) bilgilerini alir
+  * ve bu bilgilere göre ogrencinin basarili ya da basarisiz oldugunu belirler.
   */
 
  import java.util.Scanner;

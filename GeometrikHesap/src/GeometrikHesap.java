@@ -2,7 +2,10 @@
   * Ad Soyad: Muhammet Sefa KOZAN
   * Ogrenci No: 250541057
   * Tarih: 24/10/2025
-  * Aciklama: Geometrik Hesap
+  * Aciklama: Geometrik Hesaplama
+  *
+  * Kullanicidan bir yaricap (r) alir ve bu degere gore
+  * daire ve kure ile ilgili geometrik hesaplamalari yaparak sonuclari formatli sekilde ekrana yazdirir.
   */
 
  /*
