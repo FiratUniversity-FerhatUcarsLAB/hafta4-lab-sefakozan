@@ -21,7 +21,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class MaasHesap {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         // Scanner nesnesi olusturuldu
         Scanner scanner = new Scanner(System.in);
 

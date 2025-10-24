@@ -8,7 +8,7 @@
  import java.util.Scanner;
 
  public class OgrenciBilgi {
-     static void main(String[] args) {
+     public static void main(String[] args) {
          // Scanner nesnesi olusturuldu
          Scanner scanner = new Scanner(System.in);
 

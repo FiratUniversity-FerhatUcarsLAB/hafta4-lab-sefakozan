@@ -19,7 +19,7 @@
  import java.util.Scanner;
 
  public class GeometrikHesap {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         // Scanner nesnesi olusturuldu
         Scanner scanner = new Scanner(System.in);
 
