@@ -45,7 +45,7 @@ public class MaasHesap {
 
         // ------- HESAPLAMALAR YAPILIR -------
         // Gelirler
-        double mesaiUcreti = (brutMaas / 160) * calismaSaati * 1.5;
+        double mesaiUcreti = (brutMaas / 160) * mesaiSaati * 1.5;
         double toplamGelir = brutMaas + mesaiUcreti;
 
         // Kesintiler
