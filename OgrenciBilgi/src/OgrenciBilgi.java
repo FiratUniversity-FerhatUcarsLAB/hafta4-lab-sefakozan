@@ -9,6 +9,9 @@
 
  public class OgrenciBilgi {
      public static void main(String[] args) {
+         // gpa icin basari siniri
+         final double BASARI_SINIRI = 2.00;
+
          // Scanner nesnesi olusturuldu
          Scanner scanner = new Scanner(System.in);
 
@@ -36,13 +39,12 @@
 
          // Ogrencinin basarili olup olmadigi kontrol edilir
          // Basarili olma durumu gpa 2'den buyuk ve esitse olur
-         String durum;
-         if(gpa >= 2)
-         {
-             durum = "Basarili Ogrenci";
+         String basariDurumu;
+         if(gpa >= BASARI_SINIRI) {
+             basariDurumu = "Basarili Ogrenci";
          }
          else{
-             durum = "Basarisiz Ogrenci";
+             basariDurumu = "Basarisiz Ogrenci";
          }
 
          System.out.print("\n=== OGRENCI BILGI SISTEMI ===\n");
@@ -50,6 +52,6 @@
          System.out.printf("Ogrenci No: %d\n", ogrNo);
          System.out.printf("Yas: %d\n", yas);
          System.out.printf("GPA: %.2f\n", gpa);
-         System.out.printf("Durum: %s\n", durum);
+         System.out.printf("Durum: %s\n", basariDurumu);
      }
  }
