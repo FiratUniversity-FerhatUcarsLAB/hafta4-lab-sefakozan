@@ -78,15 +78,15 @@ public class MaasHesap {
         System.out.printf("Tarih: %s\n", simdikiZaman.format(formatter));
 
         System.out.println("\nGELIRLER:");
-        System.out.printf("   Brut Maas %-16s: %.2f TL\n", " ", brutMaas);
+        System.out.printf("   Brut Maas (%d saat) %-6s: %.2f TL\n", calismaSaati, " ", brutMaas);
         System.out.printf("   Mesai Ucreti (%d saat) %-3s: %.2f  TL\n", mesaiSaati, " ", mesaiUcreti);
         System.out.println("-".repeat(45));
         System.out.printf("   TOPLAM GELIR %-13s: %.2f TL\n", " ", toplamGelir);
 
         System.out.println("\nKESINTILER:");
-        System.out.printf("   SGK Kesintisi (14.0%%) %-4s: %.2f  TL\n", " ", sgk);
-        System.out.printf("   Gelir Vergisi (15.0%%) %-4s: %.2f  TL\n", " ", gelirVergisi);
-        System.out.printf("   Damga Vergisi (0.8%%) %-5s: %.2f   TL\n", " ", damgaVergisi);
+        System.out.printf("   SGK Kesintisi (%.1f%%) %-4s: %.2f  TL\n", SGK_ORANI * 100," ", sgk);
+        System.out.printf("   Gelir Vergisi (%.1f%%) %-4s: %.2f  TL\n", GELIR_VERGISI_ORANI * 100," ", gelirVergisi);
+        System.out.printf("   Damga Vergisi (%.1f%%) %-5s: %.2f   TL\n", DAMGA_VERGISI_ORANI * 100," ", damgaVergisi);
         System.out.println("-".repeat(45));
         System.out.printf("   TOPLAM KESINTI %-11s: %.2f  TL\n", " ", toplamKesinti);
         System.out.printf("NET MAAS %-20s: %.2f TL\n", " ", netMaas);

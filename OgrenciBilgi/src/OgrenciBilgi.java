@@ -4,8 +4,8 @@
   * Tarih: 24/10/2025
   * Aciklama: Ogrenci Bilgi Sistemi
   *
-  * Kullanicidan ogrencinin adı, soyadı,
-  * ogrenci numarası, yasi ve GPA (not ortalamasi) bilgilerini alir
+  * Kullanicidan ogrencinin adi, soyadi,
+  * ogrenci numarasi, yasi ve GPA (not ortalamasi) bilgilerini alir
   * ve bu bilgilere göre ogrencinin basarili ya da basarisiz oldugunu belirler.
   */
 
