@@ -103,7 +103,7 @@ public class MaasHesap {
         System.out.printf("NET MAAS %-20s: %9.2f TL\n", " ", netMaas);
 
         System.out.println("\nISTATISTIKLER:");
-        System.out.printf("   Kesinti Oranı (%%) %-8s: %.2f%%\n", " ", kesintiOrani);
+        System.out.printf("   Kesinti Oranı (%%) %-8s: %8.2f  %%\n", " ", kesintiOrani);
         System.out.printf("   Saatlik Net Kazanc %-7s: %8.2f  TL\n", " ", saatlikNetKazanc);
         System.out.printf("   Gunluk Net Kazanc %-8s: %8.2f  TL\n", " ", gunlukNetKazanc);
 
