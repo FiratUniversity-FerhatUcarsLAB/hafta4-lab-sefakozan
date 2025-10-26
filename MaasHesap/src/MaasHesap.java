@@ -23,6 +23,17 @@ import java.util.Scanner;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+/*
+ *         // %-10s  --> %s ile yazdırır, sola hizalı şekilde sağa boşluk --> [sefa      ]
+ *         // %10s   --> %s ile yazdırır, sağa hizalı şekilde sola boşluk --> [      sefa]
+ *         // %7.3f  --> 3.14159   --> Çıktı: [  3.141] 7 karakter (. dahili)
+ *         // %-30.3f  --> 3.14159   --> Çıktı: [3.141`25 boşluk`] (. dahil)
+ *         // %.3s   --> Merhaba   --> Çıktı: [Mer] ilk 3 karakter
+ *         // %05d   --> 42        --> Çıktı: 00042
+ *         // %,d    --> 1234567   --> 1,234,567
+ *         // %+d    --> 42        --> +42
+ */
+
 public class MaasHesap {
     public static void main(String[] args) {
         // Scanner nesnesi olusturuldu
@@ -79,22 +90,22 @@ public class MaasHesap {
 
         System.out.println("\nGELIRLER:");
         System.out.printf("   Brut Maas (%d saat) %-6s: %.2f TL\n", calismaSaati, " ", brutMaas);
-        System.out.printf("   Mesai Ucreti (%d saat) %-3s: %.2f  TL\n", mesaiSaati, " ", mesaiUcreti);
+        System.out.printf("   Mesai Ucreti (%d saat) %-3s: %9.2f TL\n", mesaiSaati, " ", mesaiUcreti);
         System.out.println("-".repeat(45));
         System.out.printf("   TOPLAM GELIR %-13s: %.2f TL\n", " ", toplamGelir);
 
         System.out.println("\nKESINTILER:");
-        System.out.printf("   SGK Kesintisi (%.1f%%) %-4s: %.2f  TL\n", SGK_ORANI * 100," ", sgk);
-        System.out.printf("   Gelir Vergisi (%.1f%%) %-4s: %.2f  TL\n", GELIR_VERGISI_ORANI * 100," ", gelirVergisi);
-        System.out.printf("   Damga Vergisi (%.1f%%) %-5s: %.2f   TL\n", DAMGA_VERGISI_ORANI * 100," ", damgaVergisi);
+        System.out.printf("   SGK Kesintisi (%.1f%%) %-4s: %9.2f TL\n", SGK_ORANI * 100," ", sgk);
+        System.out.printf("   Gelir Vergisi (%.1f%%) %-4s: %9.2f TL\n", GELIR_VERGISI_ORANI * 100," ", gelirVergisi);
+        System.out.printf("   Damga Vergisi (%.1f%%) %-5s: %9.2f TL\n", DAMGA_VERGISI_ORANI * 100," ", damgaVergisi);
         System.out.println("-".repeat(45));
-        System.out.printf("   TOPLAM KESINTI %-11s: %.2f  TL\n", " ", toplamKesinti);
-        System.out.printf("NET MAAS %-20s: %.2f TL\n", " ", netMaas);
+        System.out.printf("   TOPLAM KESINTI %-11s: %9.2f TL\n", " ", toplamKesinti);
+        System.out.printf("NET MAAS %-20s: %9.2f TL\n", " ", netMaas);
 
         System.out.println("\nISTATISTIKLER:");
         System.out.printf("   Kesinti Oranı (%%) %-8s: %.2f%%\n", " ", kesintiOrani);
-        System.out.printf("   Saatlik Net Kazanc %-7s: %.2f    TL\n", " ", saatlikNetKazanc);
-        System.out.printf("   Gunluk Net Kazanc %-8s: %.2f   TL\n", " ", gunlukNetKazanc);
+        System.out.printf("   Saatlik Net Kazanc %-7s: %8.2f  TL\n", " ", saatlikNetKazanc);
+        System.out.printf("   Gunluk Net Kazanc %-8s: %8.2f  TL\n", " ", gunlukNetKazanc);
 
         System.out.println("\n" + "=".repeat(45));
 
