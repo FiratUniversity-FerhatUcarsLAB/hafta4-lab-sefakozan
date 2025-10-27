@@ -1,7 +1,7 @@
 /*
  * Ad Soyad: Muhammet Sefa KOZAN
  * Ogrenci No: 250541057
- * Tarih: 24/10/2025
+ * Tarih: 27/10/2025
  * Aciklama: Maas Hesaplama
  *
  * Calisanin kisisel bilgileri, brut maasi, mesai saatleri gibi verileri alir ve
@@ -48,10 +48,10 @@ public class MaasHesap {
         System.out.print("Aylik Brut Maas (TL): ");
         double brutMaas = scanner.nextDouble();
 
-        System.out.print("Haftalik Calisma Saati: ");
+        System.out.print("Aylik Calisma Saati: ");
         int calismaSaati = scanner.nextInt();
 
-        System.out.print("Haftalik Mesai Saati: ");
+        System.out.print("Aylik Mesai Saati: ");
         int mesaiSaati = scanner.nextInt();
 
         // ------- HESAPLAMALAR YAPILIR -------
