@@ -1,7 +1,7 @@
 /*
  * Ad Soyad: Muhammet Sefa KOZAN
  * Ogrenci No: 250541057
- * Tarih: 27/10/2025
+ * Tarih: 28/10/2025
  * Aciklama: Maas Hesaplama
  *
  * Calisanin kisisel bilgileri, brut maasi, mesai saatleri gibi verileri alir ve
@@ -23,17 +23,6 @@ import java.util.Scanner;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/*
- *         // %-10s  --> %s ile yazdırır, sola hizalı şekilde sağa boşluk --> [sefa      ]
- *         // %10s   --> %s ile yazdırır, sağa hizalı şekilde sola boşluk --> [      sefa]
- *         // %7.3f  --> 3.14159   --> Çıktı: [  3.141] 7 karakter (. dahili)
- *         // %-30.3f  --> 3.14159   --> Çıktı: [3.141`25 boşluk`] (. dahil)
- *         // %.3s   --> Merhaba   --> Çıktı: [Mer] ilk 3 karakter
- *         // %05d   --> 42        --> Çıktı: 00042
- *         // %,d    --> 1234567   --> 1,234,567
- *         // %+d    --> 42        --> +42
- */
-
 public class MaasHesap {
     public static void main(String[] args) {
         // Scanner nesnesi olusturuldu
@@ -44,6 +33,10 @@ public class MaasHesap {
 
         System.out.print("Soyadiniz: ");
         String soyad = scanner.nextLine();
+
+        // ad-soyad UPPERCASE'e cevirildi
+        ad = ad.toUpperCase();
+        soyad = soyad.toUpperCase();
 
         System.out.print("Aylik Brut Maas (TL): ");
         double brutMaas = scanner.nextDouble();
@@ -74,7 +67,7 @@ public class MaasHesap {
 
         // Istatistikler
         double kesintiOrani = (toplamKesinti / toplamGelir) * 100;
-        double saatlikNetKazanc = netMaas / 176; // 22 gün × 8 saat= 176 saat/ay
+        double saatlikNetKazanc = netMaas / 176; // 22 gün * 8 saat = 176 saat/ay
         double gunlukNetKazanc = netMaas / 22;
 
         // ------- TABLO YAZDIRILIR -------
@@ -103,9 +96,9 @@ public class MaasHesap {
         System.out.printf("NET MAAS %-20s: %9.2f TL\n", " ", netMaas);
 
         System.out.println("\nISTATISTIKLER:");
-        System.out.printf("   Kesinti Oranı (%%) %-8s: %8.2f  %%\n", " ", kesintiOrani);
-        System.out.printf("   Saatlik Net Kazanc %-7s: %8.2f  TL\n", " ", saatlikNetKazanc);
-        System.out.printf("   Gunluk Net Kazanc %-8s: %8.2f  TL\n", " ", gunlukNetKazanc);
+        System.out.printf("   Kesinti Oranı (%%) %-8s: %9.2f %%\n", " ", kesintiOrani);
+        System.out.printf("   Saatlik Net Kazanc %-7s: %9.2f TL\n", " ", saatlikNetKazanc);
+        System.out.printf("   Gunluk Net Kazanc (8 saat): %9.2f TL\n", gunlukNetKazanc);
 
         System.out.println("\n" + "=".repeat(45));
 
